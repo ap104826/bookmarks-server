@@ -33,7 +33,7 @@ app.use(function validateBearerToken(req, res, next) {
     next()
 })
 
-app.use(bookmarksRouter)
+
 
 
 module.exports = app
