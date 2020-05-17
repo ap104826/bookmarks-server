@@ -19,10 +19,10 @@ const BookmarksService = {
             .where({ id })
             .delete()
     },
-    updateBookmark(knex, id, newBookmarkFields) {
+    patchBookmark(knex, id, newBookmarkFields) {
         return knex('bookmarks')
             .where({ id })
-            .update(newBookmarkFields)
+            .patch(newBookmarkFields)
     },
 }
 
