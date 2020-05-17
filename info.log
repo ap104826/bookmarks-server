@@ -10,3 +10,4 @@
 {"message":"hello","level":"error"}
 {"message":"hello","level":"error"}
 {"message":"bookmarks with id 2 deleted.","level":"info"}
+{"message":"bookmarks with id 5 deleted.","level":"info"}
