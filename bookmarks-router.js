@@ -61,16 +61,17 @@ bookmarksRouter
             .status(204)
             .end();
     })
-    .patch(async(req, res) => {
-        const {id} = req.params;
-    const db = req.app.get('db')  
-    await bookmarksService.patchBookmark(db,id)
+    .patch(bodyParser, async(req, res) => {
+        const { id } = req.params;
+        const bookmark = req.body
+        const db = req.app.get('db')  
+        await bookmarksService.patchBookmark(db, id, bookmark)
 
-    logger.info(`bookmarks with id ${id} patched.`);
-    res
-        .status(204)
-        .end();
-})
+        logger.info(`bookmarks with id ${id} patched.`);
+        res
+            .status(204)
+            .end();
+    })
 
 
 module.exports = bookmarksRouter

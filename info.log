@@ -11,3 +11,10 @@
 {"message":"hello","level":"error"}
 {"message":"bookmarks with id 2 deleted.","level":"info"}
 {"message":"bookmarks with id 5 deleted.","level":"info"}
+{"message":"bookmarks with id 1 deleted.","level":"info"}
+{"message":"bookmarks with id 3 deleted.","level":"info"}
+{"message":"bookmarks with id 7 deleted.","level":"info"}
+{"message":"bookmarks with id 4 deleted.","level":"info"}
+{"message":"bookmarks with id 2 patched.","level":"info"}
+{"message":"bookmarks with id 2 patched.","level":"info"}
+{"message":"bookmarks with id 6 patched.","level":"info"}
